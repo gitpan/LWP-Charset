@@ -10,7 +10,7 @@ require Exporter;
 
 use vars qw/$VERSION/;
 
-$VERSION = '0.01';
+$VERSION = '0.02';
 
 =head1 NAME
 
@@ -66,7 +66,7 @@ sub getCharsetFromHeader {
     } else {
 	$cth = $headers->{'content-type'};
     }
-    ($charset) = $cth =~ /charset=([^\s\"]*)/ ;
+    ($charset) = $cth =~ /charset=([^\s";]*)/ ;
     return lc($charset);
 }
 
@@ -80,7 +80,7 @@ sub getCharsetFromHeader {
 sub getCharsetFromMeta {
     my ($response) = @_;
     my ($meta)     = $response->content =~ /(<meta.*?>)/is;
-    my ($charset)  = $meta =~ /charset=([^\s\"]*)/ ;
+    my ($charset)  = $meta =~ /charset=([^\s";]*)/ ;
     return lc($charset);
 }
 
