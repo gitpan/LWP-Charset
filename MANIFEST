@@ -2,3 +2,5 @@ Charset.pm
 Makefile.PL
 MANIFEST
 README
+lwp-charset
+

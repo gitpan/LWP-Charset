@@ -1,0 +1,16 @@
+#!/usr/pkg/bin/perl -l
+
+use strict;
+
+use LWP::UserAgent;
+use LWP::Charset qw(getCharset);
+
+my $url = $ARGV[0] || die "Give me an url";
+
+my $ua = LWP::UserAgent->new(timeout => 60);
+my $response = $ua->get($url);
+
+die "request failed" unless $response->is_success;
+
+print getCharset($response);
+

@@ -7,6 +7,7 @@ WriteMakefile(
     NAME                => 'LWP::Charset',
     VERSION_FROM        => 'Charset.pm',
     DISTNAME            => 'LWP-Charset',
+    EXE_FILES		=> [ 'lwp-charset' ],
     PREREQ_PM           => {
         'LWP::UserAgent'   => '0',
     },
