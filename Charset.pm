@@ -10,7 +10,7 @@ require Exporter;
 
 use vars qw/$VERSION/;
 
-$VERSION = '0.02';
+$VERSION = '0.03';
 
 =head1 NAME
 
