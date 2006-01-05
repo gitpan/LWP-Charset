@@ -1,0 +1,45 @@
+This file contains message digests of all files listed in MANIFEST,
+signed via the Module::Signature module, version 0.44.
+
+To verify the content in this distribution, first make sure you have
+Module::Signature installed, then type:
+
+    % cpansign -v
+
+It will check each file's integrity, as well as the signature's
+validity.  If "==> Signature verified OK! <==" is not displayed,
+the distribution may already have been compromised, and you should
+not run its Makefile.PL or Build.PL.
+
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+SHA1 7a554edc470878c2c23e078846445d91e0d92ef4 Changes
+SHA1 5006b078a64837d150a53815cec66f910c71d264 MANIFEST
+SHA1 52e228ca8902f521c50696bb330ddad1a41a6ec3 META.yml
+SHA1 a2d6ff80ff16c309e1b4d41aa255061cda192188 Makefile.PL
+SHA1 74b336484e7381e863db3bf1b7b8a80b30aee238 README
+SHA1 4ff66d21679dcee70c7e940cb21b3a3c03f332b5 inc/Module/AutoInstall.pm
+SHA1 f5171d9592b6379a571fc3f9e0a78d96f532bd1e inc/Module/Install.pm
+SHA1 0fe8117bb54a818f0ea01f4f92223b81ff04f223 inc/Module/Install/AutoInstall.pm
+SHA1 05153f7b70e9501d54b3facb0bc8ee26b4966d6f inc/Module/Install/Base.pm
+SHA1 0042521215c263d69885b45d45cea00689270aca inc/Module/Install/Can.pm
+SHA1 427e2feb48202adfd58eeb7c583b69deac43d792 inc/Module/Install/Fetch.pm
+SHA1 dd33db63e1b8f9ea3be0031889b9def9ac5a3fd2 inc/Module/Install/Include.pm
+SHA1 53ec499a40338066962b8d27f2e5a8c1de285bb1 inc/Module/Install/Makefile.pm
+SHA1 226436c6ddd5dd62a36a1e81086e76c7d5db8495 inc/Module/Install/Metadata.pm
+SHA1 d657161090f078b49b9035db383b6d2eb26561ff inc/Module/Install/Win32.pm
+SHA1 fca2129e567b9dbbef5cc4a216e436aae9717824 inc/Module/Install/WriteAll.pm
+SHA1 193c8a1e12d35bd0c05b4bcb0b4be0f46fa80672 lib/LWP/Charset.pm
+SHA1 b4de203e9ad460434f52007fc83d63e9ec59b556 lwp-charset
+SHA1 168e7c6f25c1ecb862e35d8b90d48ed9624aea52 t/00.use.t
+SHA1 7135d52a711ec22c79727664c3d3cd483ccc59cb t/01.pod.t
+SHA1 736b5d6961650dbfab72299153c266b89a9aa513 t/02.pod_coverage.t
+SHA1 2dfcdb10e936282d4146d6e002b7e666548ea7ac t/1.parse.t
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.1 (Darwin)
+
+iD8DBQFDvSjHCSIfi0PaMDQRAi4UAKCpvB0ZSTq9OgkvbL4NNWn14E9NTQCfdnrX
+B7CtZxufYzXZLUATdr/hOSk=
+=lhJk
+-----END PGP SIGNATURE-----

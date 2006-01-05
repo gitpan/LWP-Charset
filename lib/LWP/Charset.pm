@@ -11,7 +11,7 @@ require Exporter;
 
 use vars qw/$VERSION/;
 
-$VERSION = '0.05';
+$VERSION = '0.06';
 
 =head1 NAME
 
@@ -93,7 +93,7 @@ sub getCharsetFromMetaString {
     my ($string) = @_;
     while($string =~ /(<meta.*?>)/gis) {
 	my $meta = $1;
-	if(my ($charset) = $meta =~ /charset=([^\s";]*)/) {
+	if(my ($charset) = $meta =~ /charset=([^\s";]*)/i) {
 	    return lc($charset);
 	}
     }
